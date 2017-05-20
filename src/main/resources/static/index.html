@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>GUI Generator</title>
+		<link rel="stylesheet" href="stylesheet/jquery-ui.css" />
+		<link rel="stylesheet" href="stylesheet/utility.css" />
+
+		<script src="scripts/jquery-1.9.1.js"></script>
+		<script src="scripts/jquery-ui.js"></script>
+		<script src="scripts/component.js"></script>
+		<script src="scripts/utilityAction.js"></script>
+
+	</head>
+	<body>
+		<div id="leftPane">
+			<h5 class="ui-widget-header" style="padding-left:20px;width: 93%;">Components</h5>
+			<ul>
+				<li>Label</li>
+				<li>Text Box</li>
+				<li>List Box</li>
+				<li>Check Box</li>
+				<li>Button</li>
+				<li>Radio Button</li>
+				<li>Submit Button</li>
+				<li>Text Area</li>
+				<li>Form</li>
+			</ul>
+			<h5 class="ui-widget-header" id="generateFile" style="cursor:pointer; width: 106%;">Generate File</h5>
+			<!--<h5 class="ui-widget-header" style="cursor:pointer">
+				<a href="defects.html" target="_blank">Defects</a>
+			</h5>-->
+		</div>
+		<div id="toggleMenu" class="open_menu"
+			onclick="toggleMenu2()"></div>
+		<div id="rightPane"></div>
+		<div id="propPane">
+			<table id="propTable" border="1" style="border-collapse:collapse" id="propTableId" ></table>
+		</div>
+
+		<div id="consolePane">
+			<h5>Console</h5>
+		</div>
+	</body>
+</html>

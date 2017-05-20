@@ -1,0 +1,114 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#leftPane {
+	float: left;
+	height: 300px;
+	width: 130px;
+	top:0px;
+	padding-right:15px;
+	background-color: rgba(20, 237, 112, 0.76);
+	position: absolute;
+	z-index:10;
+}
+#leftPane ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #FFFFFF;
+}
+#leftPane li {
+	cursor: move;
+	background-color: rgba(20, 237, 112, 0.76);
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 1px;
+	text-align: center;
+	color:#FFFFFF;
+}
+
+#rightPane {
+	float: left;
+	height: 100%;
+	width: 100%;
+	/*background-color: #998877;*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -10;
+}
+
+#propPane {
+	float: right;
+	height: 240px;
+	width: 16%;
+	right:2px;
+	top:0px;
+	/*overflow: auto;*/
+	background-color: rgba(20, 237, 112, 0.76);
+	z-index: 11;
+	color:#ffffff;
+	display:none;
+}
+
+#propPane table {
+    margin-left: 0px;
+    width: 100%;
+}
+
+#propTable tr td, #propTable tr th {
+	font-size: 13px;
+	padding-left: 7px;
+}
+
+#consolePane {
+	float: left;
+	height: 150px;
+	width: 100%;
+	bottom: 0px;
+	position: absolute;
+	background-color: #ABCABC;
+	overflow: auto;
+}
+
+#consolePane h5 {
+    padding: 5px;
+    text-align: center;
+    background: 1px rgba(20, 237, 112, 0.76);
+    position: fixed;
+    width: 100%;
+}
+
+h5 {
+	padding: .2em;
+	margin: 0;
+}
+ul li {
+	font-size: 12px;
+}
+
+.open_menu {
+	height:300px;
+	width:45px;
+	margin-left:115px;
+	margin-top:0px;
+	z-index:10;
+	cursor:pointer;
+	position: absolute;
+	background: url("../images/close.png") no-repeat center;
+}
+
+
+.close_menu {
+	height:300px;
+	width:45px;
+	margin-left:-15px;
+	margin-top:0px;
+	z-index:10;
+	cursor:pointer;
+	position: absolute;
+	background: url("../images/open.png") no-repeat center;
+}
